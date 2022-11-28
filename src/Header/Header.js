@@ -12,7 +12,8 @@ const Header = () => {
       }
 
   return (
-    <div className="navbar bg-indigo-500 ... p-3">
+    <div className="navbar bg-indigo-500 ... p-3
+    mb-6">
       <div className="flex-1">
         <Link to="/" className="btn  normal-case text-2xl">
           Honda-BD
