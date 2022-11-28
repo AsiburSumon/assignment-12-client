@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
+import LoginWithGoogle from '../../../LoginWithGoogle/LoginWithGoogle';
 
 const SignUp = () => {
     const [error, setError] = useState('');
@@ -79,7 +80,7 @@ const SignUp = () => {
                 <button className="btn btn-primary">Sign Up</button>
               </div>
               <div>
-                {/* <LoginWithProvider></LoginWithProvider> */}
+                <LoginWithGoogle></LoginWithGoogle>
               </div>
               <h4 className="py-2">
               <span className="text-red-600">
