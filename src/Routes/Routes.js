@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Main from "../Layout/Main";
 import Login from "../Login/Login/Login";
 import SignUp from "../Login/Login/SignUp/SignUp";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 const router = createBrowserRouter([
     {
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
                 element: <Blog></Blog>
             }
         ]
-    }
+    },
+    {
+        path: '*',
+        element: <PageNotFound></PageNotFound>
+      }
 ])
 
 export default router;
