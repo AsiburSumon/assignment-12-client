@@ -1,4 +1,5 @@
 import React from "react";
+import Categories from "../Categories/Categories";
 import './Home.css';
 
 const Home = () => {
@@ -49,6 +50,9 @@ const Home = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <Categories></Categories>
       </div>
     </div>
   );
