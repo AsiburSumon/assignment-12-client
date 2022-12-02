@@ -22,6 +22,7 @@ const SignUp = () => {
     createUser(email, password, name)
       .then((result) => {
         const user = result.user;
+        saveUserInDb(user.name, user.email)
         console.log(user);
         setError("");
         form.reset();
@@ -31,7 +32,23 @@ const SignUp = () => {
         console.error(error);
         setError(error.message);
       });
-  };
+
+    };
+    const saveUserInDb = (name, email)=> {
+      const user = {name,email, role};
+      console.log(user);
+      fetch('http://localhost:5000/users', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify(user)
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+      })
+    }
 
   return (
     <div>
