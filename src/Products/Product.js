@@ -1,4 +1,5 @@
 import React from "react";
+import BookingModal from "../BookingModal/BookingModal";
 
 const Product = ({ product }) => {
   const {
@@ -38,7 +39,7 @@ const Product = ({ product }) => {
           <p className="font-bold">Condition: {condition}</p>
           <p className="font-bold">Description: {description}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary w-full">Book Now</button>
+            {/* <BookingModal></BookingModal> */}
           </div>
         </div>
       </div>
