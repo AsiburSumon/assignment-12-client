@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Assignment-12 HONDA-BD
+
+Live Link: [https://honda-bd.web.app/]
+
+## My website
+* This is website for selling second hand bike
+* All categories product you can found here
+* Have a dashBoard
+* Login with google and email/password
+* responsive website   
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

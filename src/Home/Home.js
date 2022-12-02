@@ -1,5 +1,6 @@
 import React from "react";
 import Categories from "../Categories/Categories";
+import ExtraSection from "../ExtraSection/ExtraSection";
 import './Home.css';
 
 const Home = () => {
@@ -53,6 +54,9 @@ const Home = () => {
       </div>
       <div>
         <Categories></Categories>
+      </div>
+      <div className="my-5">
+        <ExtraSection></ExtraSection>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ const BookingModal = ({product}) => {
       phone,
     };
 
-    fetch("http://localhost:5000/bookingOrders", {
+    fetch("https://assignment12-server-henna.vercel.app/bookingOrders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
