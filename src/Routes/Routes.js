@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import AddProduct from "../AddProduct/AddProduct";
 import Blog from "../Blog/Blog";
 import BookingModal from "../BookingModal/BookingModal";
 import Home from "../Home/Home";
@@ -34,10 +35,14 @@ const router = createBrowserRouter([
                 path: '/product/:brand',
                 element: <PrivateRoute><Products></Products></PrivateRoute>
             },
+            // {
+            //     path: '/bookingOrders/:brand/:id',
+            //     element: <BookingModal></BookingModal>,
+            //     loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+            // },
             {
-                path: '/bookingOrders/:brand/:id',
-                element: <BookingModal></BookingModal>,
-                loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+                path: '/addProduct',
+                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
             }
         ]
     },

@@ -1,8 +1,10 @@
 import React from "react";
+import AddProduct from "../AddProduct/AddProduct";
 import BookingModal from "../BookingModal/BookingModal";
 
 const Product = ({ product }) => {
   const {
+    _id,
     sellerName,
     sellerEmail,
     description,
@@ -38,8 +40,11 @@ const Product = ({ product }) => {
           <p className="font-bold">Post date: {postOfDate}</p>
           <p className="font-bold">Condition: {condition}</p>
           <p className="font-bold">Description: {description}</p>
+          <label className="btn btn-primary w-full" htmlFor={`"booking-modal-${_id}"`}>
+            Book Product
+          </label>
           <div className="card-actions justify-end">
-            {/* <BookingModal></BookingModal> */}
+            <BookingModal product={product}></BookingModal>
           </div>
         </div>
       </div>

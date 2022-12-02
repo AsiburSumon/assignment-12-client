@@ -12,14 +12,14 @@ const Header = () => {
       }
 
   return (
-    <div className="navbar bg-indigo-500 ... p-3
+    <div className="navbar grid grid-cols-1 lg:grid-cols-2 bg-indigo-500 ... p-3
     mb-2">
-      <div className="flex-1">
+      <div className="flex-1 justify-center lg:justify-start">
         <Link to="/" className="btn  normal-case text-2xl">
           Honda-BD
         </Link>
       </div>
-      <div className="flex-none">
+      <div className="flex-none justify-center lg:justify-end">
         <ul className="menu menu-horizontal p-0 text-xl font-serif font-bold text-white">
           <li>
             <Link to="/">Home</Link>
